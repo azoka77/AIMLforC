@@ -1,0 +1,30 @@
+[18:03:50]	[Info]	Loading sets from C:\Users\Marci\OneDrive\Documents\EKA\Mākslīgais Intelekts\dati\aiml\pizza-for-console\sets.
+[18:03:50]	[Info]	Loaded 24 set(s).
+[18:03:50]	[Info]	Loading maps from C:\Users\Marci\OneDrive\Documents\EKA\Mākslīgais Intelekts\dati\aiml\pizza-for-console\maps.
+[18:03:50]	[Info]	Loaded 4 map(s).
+[18:03:50]	[Info]	Loading maps from C:\Users\Marci\OneDrive\Documents\EKA\Mākslīgais Intelekts\dati\aiml\pizza-for-console\triples.txt.
+[18:03:50]	[Info]	Loaded 17 triple(s).
+[18:03:50]	[Info]	Loading AIML files from C:\Users\Marci\OneDrive\Documents\EKA\Mākslīgais Intelekts\dati\aiml\pizza-for-console\aiml
+[18:03:50]	[Info]	Processing AIML file: C:\Users\Marci\OneDrive\Documents\EKA\Mākslīgais Intelekts\dati\aiml\pizza-for-console\aiml\pand_initial.aiml
+[18:03:50]	[Info]	Processing AIML file: C:\Users\Marci\OneDrive\Documents\EKA\Mākslīgais Intelekts\dati\aiml\pizza-for-console\aiml\sveiciens.aiml
+[18:03:50]	[Info]	Finished loading the AIML files. 46 categories in 2 files processed.
+[18:04:39]	[Chat]	User: Sveiki
+[18:04:39]	[Chat]	Picas pasūtīšanas bots: Čau! Vai esi gatavs garšas eksplozijai, pasūtot picu?
+[18:04:48]	[Chat]	User: Protams
+[18:04:48]	[Chat]	Picas pasūtīšanas bots: Atvaino! Diemžēl nesapratu! Vai vēlies pasūtīt picu?
+[18:04:52]	[Chat]	User: Jā
+[18:04:52]	[Chat]	Picas pasūtīšanas bots: Kādu picu tu vēlies?
+[18:04:59]	[Chat]	User: Kādas jums ir?
+[18:04:59]	[Chat]	Picas pasūtīšanas bots: Mēs piedāvājam siera, šķiņķa (bekona), sēņu, dārzeņu, Havaju (vistas), čili un īpašo picu.
+[18:05:25]	[Chat]	User: Es vēlos zaļo picu.
+[18:05:25]	[Chat]	Picas pasūtīšanas bots: Labi! Tava izvēle ir: veģetārā pica.Vai pareizi sapratu?
+[18:05:31]	[Chat]	User: Jā
+[18:05:31]	[Chat]	Picas pasūtīšanas bots: Lieliski! Vai tu vēlies arī kādu dzērienu?
+[18:05:36]	[Chat]	User: Jā
+[18:05:36]	[Chat]	Picas pasūtīšanas bots: Labi! Kādu dzērienu tu vēlies?
+[18:08:09]	[Chat]	User: kādus jūs varat piedāvāt?
+[18:08:09]	[Chat]	Picas pasūtīšanas bots: Mēs piedāvājam kolu, fantu, persiku un citronu auksto tēju un sulas - ābolu, apelsīnu, tomātu, multivitamīnu un vīnogu. Kādu dzērienu tu vēlies?
+[18:08:37]	[Chat]	User: Šodien gribu kokakolu.
+[18:08:37]	[Chat]	Picas pasūtīšanas bots: Labi! Kādu dzērienu tu vēlies?
+[18:08:50]	[Chat]	User: kolu
+[18:08:50]	[Chat]	Picas pasūtīšanas bots: Labi! Tava izvēle ir: kola. Vai pareizi sapratu?

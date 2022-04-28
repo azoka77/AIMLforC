@@ -1,0 +1,52 @@
+[23:25:29]	[Info]	Loading sets from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\pizza-for-console\sets.
+[23:25:29]	[Info]	Loaded 24 set(s).
+[23:25:29]	[Info]	Loading maps from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\pizza-for-console\maps.
+[23:25:29]	[Info]	Loaded 4 map(s).
+[23:25:29]	[Info]	Loading maps from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\pizza-for-console\triples.txt.
+[23:25:29]	[Info]	Loaded 17 triple(s).
+[23:25:29]	[Info]	Loading AIML files from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\pizza-for-console\aiml
+[23:25:29]	[Info]	Processing AIML file: C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\pizza-for-console\aiml\pand_initial.aiml
+[23:25:30]	[Info]	Processing AIML file: C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\pizza-for-console\aiml\sveiciens.aiml
+[23:25:30]	[Info]	Finished loading the AIML files. 46 categories in 2 files processed.
+[23:25:37]	[Chat]	User: hi
+[23:25:37]	[Chat]	Picas pasūtīšanas bots: Es diemžēl nesapratu! Čau! Vai esi gatavs garšas eksplozijai, pasūtot picu?
+[23:25:59]	[Chat]	User: Cau
+[23:25:59]	[Chat]	Picas pasūtīšanas bots: Es diemžēl nesapratu! Sveiks! Prieks tevi pie mums redzēt! Vai esi izlēmis pasūtīt picu?
+[23:26:29]	[Chat]	User: ja
+[23:26:29]	[Chat]	Picas pasūtīšanas bots: Es diemžēl nesapratu! Sveiks! Prieks tevi pie mums redzēt! Vai esi izlēmis pasūtīt picu?
+[23:26:37]	[Chat]	User: jaa
+[23:26:37]	[Chat]	Picas pasūtīšanas bots: Es diemžēl nesapratu! Sveiks! Prieks tevi pie mums redzēt! Vai esi izlēmis pasūtīt picu?
+[23:26:41]	[Chat]	User: ne
+[23:26:41]	[Chat]	Picas pasūtīšanas bots: Es diemžēl nesapratu! Sveiki! Vai vēlies pasūtīt picu?
+[23:26:44]	[Chat]	User: ja
+[23:26:44]	[Chat]	Picas pasūtīšanas bots: Es diemžēl nesapratu! Sveiki! Vai vēlies pasūtīt picu?
+[23:27:17]	[Info]	Loading sets from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\pizza-for-console\sets.
+[23:27:17]	[Info]	Loaded 24 set(s).
+[23:27:17]	[Info]	Loading maps from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\pizza-for-console\maps.
+[23:27:17]	[Info]	Loaded 4 map(s).
+[23:27:17]	[Info]	Loading maps from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\pizza-for-console\triples.txt.
+[23:27:17]	[Info]	Loaded 17 triple(s).
+[23:27:17]	[Info]	Loading AIML files from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\pizza-for-console\aiml
+[23:27:17]	[Info]	Processing AIML file: C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\pizza-for-console\aiml\pand_initial.aiml
+[23:27:17]	[Info]	Processing AIML file: C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\pizza-for-console\aiml\sveiciens.aiml
+[23:27:17]	[Info]	Finished loading the AIML files. 46 categories in 2 files processed.
+[23:27:22]	[Chat]	User: Sveiki
+[23:27:22]	[Chat]	Picas pasūtīšanas bots: Sveiki! Vai vēlies pasūtīt picu?
+[23:27:27]	[Chat]	User: Ja
+[23:27:27]	[Chat]	Picas pasūtīšanas bots: Kādu picu tu vēlies?
+[23:27:40]	[Chat]	User: Kadas tev ir?
+[23:27:40]	[Chat]	Picas pasūtīšanas bots: Mēs piedāvājam siera, šķiņķa (bekona), sēņu, dārzeņu, Havaju (vistas), čili un īpašo picu.
+[23:27:47]	[Chat]	User: senu
+[23:27:47]	[Chat]	Picas pasūtīšanas bots: Diemžēl tādu picu mēs nepiedāvājam. Mēs piedāvājam siera, šķiņķa (bekona), sēņu, dārzeņu, Havaju (vistas), čili un īpašo picu.
+[23:28:06]	[Chat]	User: siera
+[23:28:06]	[Chat]	Picas pasūtīšanas bots: Labi! Tava izvēle ir: siera pica.Vai pareizi sapratu?
+[23:28:14]	[Chat]	User: ja
+[23:28:14]	[Chat]	Picas pasūtīšanas bots: Lieliski! Vai tu vēlies arī kādu dzērienu?
+[23:28:17]	[Chat]	User: ne
+[23:28:17]	[Chat]	Picas pasūtīšanas bots: Diemžēl tādu dzērienu mēs nepiedāvājam. Mēs piedāvājam kolu, fantu, persiku un citronu auksto tēju un sulas - ābolu, apelsīnu, tomātu, multivitamīnu un vīnogu. Kādu dzērienu tu vēlies?
+[23:28:33]	[Chat]	User: nekadu
+[23:28:33]	[Chat]	Picas pasūtīšanas bots: Diemžēl tādu dzērienu mēs nepiedāvājam. Mēs piedāvājam kolu, fantu, persiku un citronu auksto tēju un sulas - ābolu, apelsīnu, tomātu, multivitamīnu un vīnogu. Kādu dzērienu tu vēlies?
+[23:28:42]	[Chat]	User: tomatu
+[23:28:42]	[Chat]	Picas pasūtīšanas bots: Labi! Tava izvēle ir: tomātu sula. Vai pareizi sapratu?
+[23:28:47]	[Chat]	User: Ja
+[23:28:47]	[Chat]	Picas pasūtīšanas bots: Lieliski! Tavs pasūtījums ir šāds: Pica: siera Dzēriens: tomātu sula Paldies, ka pasūtīji pie mums picu!

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+	<pattern>
+		<set>greetings</set>
+	</pattern>
+	<template>
+		<think>
+			<set name = "topic"> vakcinacija yesno </set>
+		</think>
+		<random>
+			<li>Sveiki! Vakcīna pasargās Jūs no simptomātiskas saslimšanas ar Covid-19. Vai vēlies vakcineties pret Covid-19?</li>
+			<li>Čau! Vakcīna - Tā ir mūsu kopīga iespēja uzveikt pandēmiju un atgriezties ierastajā dzīves ritmā. Vai vēlies vakcineties pret Covid-19?</li>
+			<li>Sveiks! Vakcinācija paredzēta pieaugušajiem Latvijas iedzīvotājiem. Vai vēlies vakcineties pret Covid-19? </li>
+			<!-- Teksts no manavakcina.lv -->
+		</random>
+	</template>
+</category>
+
+	
+<category>
+   <pattern>^ <set>greetings</set> ^</pattern>
+   <template>
+      <srai> <star index="2"/> </srai>
+   </template>
+</category>
+
+
+
+<topic name = "vakcinacija yesno">
+
+<category>
+	<pattern>
+		<set>yesset</set>
+	</pattern>
+	<template>
+		<think>
+			<set name = "topic"> vakcina question </set>
+		</think>
+		Ko tieši Jūs interesē? 1. vakcīna? 2. vakcīna? Tests uz anti-vielam?
+	</template>
+</category>
+
+
+<category>
+	<pattern> * </pattern>
+	<template>
+		Atvaino! Diemžēl nesapratu! Vai vēlies vakcineties pret Covid-19?
+	</template>
+</category>
+
+
+
+
+<category>
+	<pattern>
+		^ <set>yesset</set> ^
+	</pattern>
+	<template>
+		<srai>
+			<star index="2"/>
+		</srai>
+	</template>
+</category>
+<category>
+	<pattern>
+		<set>noset</set>
+	</pattern>
+	<template>
+		<set name = "topic"> * </set>
+		Labi! Lai tev jauka diena!
+	</template>
+</category>
+<category>
+	<pattern>
+		^ <set>noset</set> ^
+	</pattern>
+	<template>
+		<srai>
+			<star index="2"/>
+		</srai>
+	</template>
+</category>
+</topic>
+
+
+<topic name = "vakcina question">
+<category>
+   <pattern> * </pattern>
+   <template>
+	   Diemžēl tādu pakalpojumu mes nepiedāvājam. Mēs piedāvājam: 1 vakcina; 2 vakcina; Tests uz anti-vielam.(vakcina question)
+   </template>
+</category>
+<category>
+   <pattern> ^ <set>vakcinaoffer</set> ^ </pattern>
+   <template>
+        Mēs piedāvājam 1.vakcinu pret Covid-19, 2.vakcinu pret Covid-19 un testu uz anti-vielam.
+   </template>
+</category>
+<category>
+   <pattern>^ <set>vakcina1</set> ^</pattern>
+   <template>
+	   <think>
+		   <set name = "pirmaispakolpojums"> vakcīnaNr1 </set>
+	   </think>
+	   
+      <srai> VALIDATE </srai>
+   </template>
+</category>
+
+	
+	
+<!-- azoka new -> goto vakcina2--> 
+<category>
+	<pattern>
+		^ <set>vakcina2</set> ^
+	</pattern>
+	<template>
+		<think>
+			
+			<set name = "topic"> vakcina2 </set>
+			<!-- otraispakalpojums topic=otraispakalpojums-->
+			
+		</think>
+		Labi!
+		<srai> covid2 </srai>
+	</template>
+</category>	
+	
+	
+	
+<!--
+	
+	<category>
+   <pattern>^ <set>vakcina2</set> ^</pattern>
+   <template>
+      <think><set name = "otraispakolpojums"> vakcīnaNr2 </set></think>
+      <srai> VALIDATE </srai>
+   </template>
+</category>
+	-->
+	
+	
+<category>
+   <pattern>^ <set>testuzantivielam</set> ^</pattern>
+   <template>
+      <think><set name = "antivielas"> tests uz anti-vielam </set></think>
+      <srai> VALIDATE </srai>
+   </template>
+</category>
+	
+	
+	
+<category>
+   <pattern> VALIDATE </pattern>
+   <template>
+        <think><set name = "topic"> vakcina1 validation </set></think>
+        Labi! Tava izvēle ir: <get name="pirmaispakolpojums"/>.Vai pareizi sapratu?
+   </template>
+</category>
+</topic>
+
+
+
+
+	
+<topic name = "vakcina1 validation">
+<category>
+   <pattern> * </pattern>
+   <template>
+        Atvaino! Diemžēl nesapratu! Vai es pareizi sapratu tavu izvēli: <get name="pirmaispakolpojums"/> ?
+   </template>
+</category>
+<category>
+   <pattern> <set>rightset</set> </pattern>
+   <template>
+
+	   <think><set name = "topic"> antivielas question </set>
+		
+        <set name = "drink"> nebūs </set></think>
+	   
+	   
+	   
+        Lieliski! Vai tu vēlies arī tests uz anti-vielam pec 2 nedēļam?
+   </template>
+</category>
+<category>
+   <pattern>^ <set>rightset</set> ^</pattern>
+   <template>
+      <srai> <star index="2"/> </srai>
+   </template>
+</category>
+<category>
+   <pattern> <set>wrongset</set> </pattern>
+   <template>
+        <think><set name = "topic"> vakcina1 question </set></think>
+	   Atvaino, ka nesapratu! Mēs piedāvājam 1.vakcinu pret Covid-19, 2.vakcinu pret Covid-19 un testu uz anti-vielam. Ko tu vēlies?
+   </template>
+</category>
+<category>
+   <pattern>^ <set>wrongset</set> ^</pattern>
+   <template>
+      <srai> <star index="2"/> </srai>
+   </template>
+</category>
+</topic>
+
+-->
+
+
+<topic name = "antivielas question">
+<category>
+   <pattern>^ <set>noset</set> ^</pattern>
+   <template>
+      <think><set name = "topic"> FINAL </set></think>
+      Labi!
+      <srai> SUMMARY </srai>
+   </template>
+</category>
+<category>
+   <pattern>^ <set>yesset</set> ^</pattern>
+   <template>
+	   Labi! Izvelies laboratorijas adresi, kur grībat nodot asina analizes? 1. Rīga-Imanta, Anninmuižas būlv. 90, 2. Rīga-Centrs, Merkeļa iela 2, 3. Rīga- Purvciems, Nicgales iela 2,
+	   4. Rīga- Kengarags, Kengaraga iela 1a
+   </template>
+</category>
+<category>
+   <pattern> * </pattern>
+   <template>
+	   Diemžēl tādu laboratoriju nav. Mēs piedāvājam : 1. Rīga-Imanta, Anninmuižas būlv. 90, 2. Rīga-Centrs, Merkeļa iela 2, 3. Rīga- Purvciems, Nicgales iela 2,
+	   4. Rīga- Kengarags, Kengaraga iela 1a. Kur grībat nodot asina analizes?
+   </template>
+</category>
+<category>
+   <pattern> ^ <set>vakcinaoffer</set> ^ </pattern>
+   <template>
+	   Mēs piedāvājam : 1. Rīga-Imanta, Anninmuižas būlv. 90, 2. Rīga-Centrs, Merkeļa iela 2, 3. Rīga- Purvciems, Nicgales iela 2,
+	   4. Rīga- Kengarags, Kengaraga iela 1a. Kur grībat nodot asina analizes?
+   </template>
+</category>
+<category>
+   <pattern>^ <set>colaset</set> ^</pattern>
+   <template>
+      <think><set name = "antivielas"> Rīga-Imanta, Anninmuižas būlv. 90 </set></think>
+      <srai> VALIDATE </srai>
+   </template>
+</category>
+<category>
+   <pattern>^ <set>fantaset</set> ^</pattern>
+   <template>
+      <think><set name = "antivielas"> Rīga-Centrs, Merkeļa iela 2 </set></think>
+      <srai> VALIDATE </srai>
+   </template>
+</category>
+
+	
+	
+	
+<category>
+   <pattern> VALIDATE </pattern>
+   <template>
+        <think><set name = "topic"> antivielas validation </set></think>
+        Labi! Tava izvēle ir: <get name="antivielas"/>. Vai pareizi sapratu?
+   </template>
+</category>
+</topic>
+
+
+
+
+<topic name = "antivielas validation">
+<category>
+   <pattern> * </pattern>
+   <template>
+        Atvaino! Diemžēl nesapratu! Vai es pareizi sapratu, ka tava izvēle ir <get name="antivielas"/>?
+   </template>
+</category>
+<category>
+   <pattern> ^ <set>rightset</set> ^ </pattern>
+   <template>
+        <think><set name = "topic"> FINAL </set></think>
+        Lieliski!
+        <srai> SUMMARY </srai>
+   </template>
+</category>
+<category>
+   <pattern> ^ <set>wrongset</set> ^ </pattern>
+   <template>
+        <think><set name = "topic"> antivielas question </set></think>
+        Atvaino, ka nesapratu! Mēs piedāvājam uztaisīt testu uz covid-19 anti-vielam !
+   </template>
+</category>
+</topic>
+
+
+<topic name = "vakcina2">
+	<category>
+		<pattern> covid2 </pattern>
+		<template>
+
+			Izvelies laboratorijas adresi, kur grībat nodot asina analizes? 1. Rīga-Imanta, Anninmuižas būlv. 90, 2. Rīga-Centrs, Merkeļa iela 2, 3. Rīga- Purvciems, Nicgales iela 2,
+			4. Rīga- Kengarags, Kengaraga iela 1a
+
+			<!--Pakalpojums3: <get name="drink" /> -->
+
+				
+		</template>
+		
+	</category>
+
+		<category>
+			<pattern>
+				^ <set>noset</set> ^
+			</pattern>
+			<template>
+				<think>
+					<set name = "topic"> FINAL </set>
+				</think>
+				Labi!
+				<srai> SUMMARY </srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+				^ <set>yesset</set> ^
+			</pattern>
+			<template>
+				Labi! Izvelies laboratorijas adresi, kur grībat nodot asina analizes? 1. Rīga-Imanta, Anninmuižas būlv. 90, 2. Rīga-Centrs, Merkeļa iela 2, 3. Rīga- Purvciems, Nicgales iela 2,
+				4. Rīga- Kengarags, Kengaraga iela 1a
+			</template>
+		</category>
+		<category>
+			<pattern> * </pattern>
+			<template>
+				Diemžēl tādu laboratoriju nav. Mēs piedāvājam : 1. Rīga-Imanta, Anninmuižas būlv. 90, 2. Rīga-Centrs, Merkeļa iela 2, 3. Rīga- Purvciems, Nicgales iela 2,
+				4. Rīga- Kengarags, Kengaraga iela 1a. Kur grībat nodot asina analizes?
+			</template>
+		</category>
+		<category>
+			<pattern>
+				^ <set>vakcinaoffer</set> ^
+			</pattern>
+			<template>
+				Mēs piedāvājam : 1. Rīga-Imanta, Anninmuižas būlv. 90, 2. Rīga-Centrs, Merkeļa iela 2, 3. Rīga- Purvciems, Nicgales iela 2,
+				4. Rīga- Kengarags, Kengaraga iela 1a. Kur grībat nodot asina analizes?
+			</template>
+		</category>
+		<category>
+			<pattern>
+				^ <set>colaset</set> ^
+			</pattern>
+			<template>
+				<think>
+					<set name = "vak2"> Rīga-Imanta, Anninmuižas būlv. 90 </set>
+				</think>
+				<srai> VALIDATE </srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+				^ <set>fantaset</set> ^
+			</pattern>
+			<template>
+				<think>
+					<set name = "vak2"> Rīga-Centrs, Merkeļa iela 2 </set>
+				</think>
+				<srai> VALIDATE </srai>
+			</template>
+		</category>
+
+
+
+
+		<category>
+			<pattern> VALIDATE </pattern>
+			<template>
+				<think>
+					<set name = "topic"> vak2 validation </set>
+				</think>
+				Labi! Tava izvēle ir: <get name="vak2"/>. Vai pareizi sapratu?
+			</template>
+		</category>
+	
+	
+	
+</topic>
+
+	<topic name = "vak2 validation">
+		<category>
+			<pattern> * </pattern>
+			<template>
+				Atvaino! Diemžēl nesapratu! Vai es pareizi sapratu, ka tava izvēle ir <get name="vak2"/>?
+			</template>
+		</category>
+		<category>
+			<pattern>
+				^ <set>rightset</set> ^
+			</pattern>
+			<template>
+				<think>
+					<set name = "topic"> FINAL </set>
+				</think>
+				Lieliski!
+				<srai> SUMMARY </srai>
+			</template>
+		</category>
+		<category>
+			<pattern>
+				^ <set>wrongset</set> ^
+			</pattern>
+			<template>
+				<think>
+					<set name = "topic"> vak question </set>
+				</think>
+				Atvaino, ka nesapratu! Mes piedavajam 2.vakcinu uz covid-19!
+			</template>
+		</category>
+	</topic>
+
+	
+
+
+
+
+<topic name = "FINAL">
+<category>
+   <pattern> SUMMARY </pattern>
+   <template>
+      <think><set name = "topic"> * </set></think>
+      Tu ierakstijies uz :
+      Pakalpojums1: <get name="pirmaispakolpojums" />
+	  Adrese: <get name="pirmaispakolpojumsaddress" />
+	  
+	  Pakalpojums2: <get name="otraispakalpojums" />
+      Adrese: <get name="vak2" />
+	   
+	   
+	   Pakalpojums3: <get name="antivielas" />
+	   Adrese:
+
+	   
+	   Neaizmirsti paņemt līdi personas apliecinošu dokumentu!
+	   
+      Paldies, ka izvelejies mūsu pakalpojumus!
+   </template>
+</category>
+</topic>
+	-->
+
+</aiml>

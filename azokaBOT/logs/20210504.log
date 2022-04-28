@@ -1,0 +1,58 @@
+[22:31:52]	[Info]	Loading sets from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\sets.
+[22:31:52]	[Info]	Loaded 14 set(s).
+[22:31:52]	[Info]	Loading maps from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\maps.
+[22:31:52]	[Info]	Loaded 4 map(s).
+[22:31:52]	[Info]	Loading maps from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\triples.txt.
+[22:31:52]	[Info]	Loaded 17 triple(s).
+[22:31:52]	[Info]	Loading AIML files from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\aiml
+[22:31:52]	[Info]	Processing AIML file: C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\aiml\pand_initial.aiml
+[22:31:52]	[Info]	Processing AIML file: C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\aiml\sveiciens.aiml
+[22:31:52]	[Info]	Finished loading the AIML files. 37 categories in 2 files processed.
+[22:31:56]	[Chat]	User: cau
+[22:31:56]	[Chat]	azoka bots: Sveiks! Vakcinācija paredzēta pieaugušajiem Latvijas iedzīvotājiem. Vai vēlies vakcineties pret Covid-19?
+[22:32:00]	[Chat]	User: ja
+[22:32:00]	[Chat]	azoka bots: Ko tieši Jūs interesē? 1. vakcīna? 2. vakcīna? Tests uz anti-vielam?
+[22:32:06]	[Chat]	User: tests
+[22:32:06]	[Chat]	azoka bots: Labi! Tava izvēle ir: unknown.Vai pareizi sapratu?
+[22:32:12]	[Chat]	User: ja
+[22:32:12]	[Chat]	azoka bots: Lieliski! Vai tu vēlies arī tests uz anti-vielam pec 2 nedēļam?
+[22:34:32]	[Info]	Loading sets from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\sets.
+[22:34:32]	[Info]	Loaded 14 set(s).
+[22:34:32]	[Info]	Loading maps from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\maps.
+[22:34:32]	[Info]	Loaded 4 map(s).
+[22:34:32]	[Info]	Loading maps from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\triples.txt.
+[22:34:32]	[Info]	Loaded 17 triple(s).
+[22:34:32]	[Info]	Loading AIML files from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\aiml
+[22:34:32]	[Info]	Processing AIML file: C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\aiml\pand_initial.aiml
+[22:34:32]	[Info]	Processing AIML file: C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\aiml\sveiciens.aiml
+[22:34:32]	[Info]	Finished loading the AIML files. 37 categories in 2 files processed.
+[22:34:35]	[Chat]	User: cau
+[22:34:35]	[Chat]	azoka bots: Sveiki! Vakcīna pasargās Jūs no simptomātiskas saslimšanas ar Covid-19. Vai vēlies vakcineties pret Covid-19?
+[22:34:36]	[Chat]	User: ja
+[22:34:36]	[Chat]	azoka bots: Ko tieši Jūs interesē? 1. vakcīna? 2. vakcīna? Tests uz anti-vielam?
+[22:34:39]	[Chat]	User: 2
+[22:34:39]	[Chat]	azoka bots: Labi! Tu ierakstijies uz : asd asd asd asd asd asd asd asd as da sd asd as Adrese:
+[22:40:43]	[Info]	Loading sets from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\sets.
+[22:40:43]	[Info]	Loaded 14 set(s).
+[22:40:43]	[Info]	Loading maps from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\maps.
+[22:40:43]	[Info]	Loaded 4 map(s).
+[22:40:43]	[Info]	Loading maps from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\triples.txt.
+[22:40:43]	[Info]	Loaded 17 triple(s).
+[22:40:43]	[Info]	Loading AIML files from C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\aiml
+[22:40:43]	[Info]	Processing AIML file: C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\aiml\pand_initial.aiml
+[22:40:43]	[Info]	Processing AIML file: C:\Users\user\Desktop\RTK\EKA2020\MaksligaisIntelekts\TerzesanasBota_Paraugs_AIML\azokaBOT\aiml\sveiciens.aiml
+[22:40:43]	[Info]	Finished loading the AIML files. 36 categories in 2 files processed.
+[22:40:48]	[Chat]	User: cau
+[22:40:48]	[Chat]	azoka bots: Čau! Vakcīna - Tā ir mūsu kopīga iespēja uzveikt pandēmiju un atgriezties ierastajā dzīves ritmā. Vai vēlies vakcineties pret Covid-19?
+[22:40:49]	[Chat]	User: ja
+[22:40:49]	[Chat]	azoka bots: Ko tieši Jūs interesē? 1. vakcīna? 2. vakcīna? Tests uz anti-vielam?
+[22:40:50]	[Chat]	User: 1
+[22:40:50]	[Chat]	azoka bots: Labi! Tava izvēle ir: vakcīnaNr1.Vai pareizi sapratu?
+[22:40:52]	[Chat]	User: ja
+[22:40:52]	[Chat]	azoka bots: Lieliski! Vai tu vēlies arī tests uz anti-vielam pec 2 nedēļam?
+[22:40:54]	[Chat]	User: ja
+[22:40:54]	[Chat]	azoka bots: Labi! Izvelies laboratorijas adresi, kur grībat nodot asina analizes? 1. Rīga-Imanta, Anninmuižas būlv. 90, 2. Rīga-Centrs, Merkeļa iela 2, 3. Rīga- Purvciems, Nicgales iela 2, 4. Rīga- Kengarags, Kengaraga iela 1a
+[22:40:57]	[Chat]	User: 1
+[22:40:57]	[Chat]	azoka bots: Labi! Tava izvēle ir: Rīga-Imanta, Anninmuižas būlv. 90. Vai pareizi sapratu?
+[22:40:59]	[Chat]	User: ja
+[22:40:59]	[Chat]	azoka bots: Lieliski! Tu ierakstijies uz : Pakalpojums1: vakcīnaNr1 Adrese: unknown Pakalpojums2: unknown Adrese: unknown Pakalpojums3: Rīga-Imanta, Anninmuižas būlv. 90 Adrese: Neaizmirsti paņemt līdi personas apliecinošu dokumentu! Paldies, ka izvelejies mūsu pakalpojumus!
